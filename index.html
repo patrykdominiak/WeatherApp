@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Weather App with Simple Digital Clock</title>
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="searchContainer">
+            <input class="searchControl" type="text" placeholder="Type City Name" id="searchInput">
+            <button class="searchControl" id="searchBtn">Search</button>
+        </div>
+        <div id="weatherContainer">
+            <div id="weatherDescription">
+                <h1 id="cityHeader"></h1>
+                <div id="weatherMain">
+                    <div id="temperature"></div>
+                    <div id="weatherDescriptionHeader"></div>
+                    <div><img id="documentIconImg"></div>
+                </div>
+                <hr>
+                <div id="windSpeed" class="bottom-details"></div>
+                <div id="humidity" class="bottom-details"></div>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="clock">
+                <span id="hour"></span>
+                <span id="minute"></span>
+                <span id="second"></span>
+            </div>
+        </div>
+        
+        <div class="footer">Copyright&copy Patryk Dominiak </div>
+        
+        <script src="clock/main.js"></script>
+        <script src="weather/main.js" ></script>
+    </body>
+</html>
